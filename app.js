@@ -19,8 +19,9 @@ var tileId = 0;
 var isGamePlaying = false;
 var rotation;
 
-// Added Git
 
+
+// Added Git
 
 // Default tile object to make code
 class Tile {
