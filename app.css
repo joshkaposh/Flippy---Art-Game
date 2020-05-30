@@ -15,6 +15,13 @@ h3{
     justify-self: center;
     align-self: center;
 }
+button.no_selection {
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
 
 #game{
     margin-top: 1rem;
@@ -51,7 +58,7 @@ h3{
     border: 2px solid black;
 }
 
-#erase{
+#eraser{
     height: 20px;
     width: 50px;
     border: 1px solid black;
@@ -60,15 +67,12 @@ h3{
     align-self: center;
 }
 
-#erase:hover{
-    border: 2px solid black;
-    font-weight: 600;
-}
 
 
 .eraserOn{
     background: rgb(117, 248, 117);
 }
+
 
 .reset{all: unset;}
 
