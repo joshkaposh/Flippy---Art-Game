@@ -58,32 +58,37 @@ button.no_selection {
     border: 2px solid black;
 }
 
-#eraser{
+.controlButton{
     height: 20px;
     width: 50px;
     border: 1px solid black;
-    grid-column: 3/4;
-    grid-row: 1/3;
     align-self: center;
+    user-select: none; /* standard syntax */
+
 }
 
+.controlButton:hover{
+    border: 2px solid black;
+}
 
+.eraser{
+    grid-column: 3/4;
+    grid-row: 1/3
+}
 
-.eraserOn{
-    background: rgb(117, 248, 117);
+.select{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.invert{
+    grid-column: 4/5;
+    grid-row: 1/3
 }
 
 
 .reset{all: unset;}
 
-.eraserOff{
-    height: 20px;
-    width: 50px;
-    border: 1px solid black;
-    grid-column: 3/4;
-    grid-row: 1/3;
-    align-self: center;
-}
 
 #startGame{
     height: 50px;
