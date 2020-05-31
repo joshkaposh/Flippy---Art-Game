@@ -1,4 +1,7 @@
 import {Controls} from "./controls.js"
-var controls = new Controls("controls")
-var game = () => {controls.startGame()}
+const controls = new Controls("controls")
+const game = () => {
+    controls.startGame()
+    let grid = document.querySelector("#grid")
+}
 game()
